@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { 
+    height: 100%;
+    background-color: #2A2E54; 
+}
+body { 
+    margin: 0; 
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+::ng-deep .mat-tooltip {
+    /* your own custom styles here */ 
+    /* e.g. */
+    color: yellow;
+}
+
+mat-form-field{
+    width: 100%;
+    .mat-form-field-wrapper.ng-tns-c95-0{
+        padding-bottom: 0 !important;
+        .mat-form-field-underline.ng-tns-c95-0.ng-star-inserted{
+            bottom: 0 !important;
+        }
+    }
+}
+/****************************SCROLL*******************************/

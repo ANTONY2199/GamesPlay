@@ -1,0 +1,106 @@
+.container{
+    margin: 20px auto;
+}
+.lista-header{
+    width: 97%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    height: 52px;
+     .izquierda{
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         height: 100%;
+         h4{
+             color: #6C73A5;
+             margin: 0 0;
+         }
+         h3{
+             color: #b9bcd0;
+             font-weight: 500;
+             margin: 0 0;  
+         }
+     }
+     .derecha{
+         display: flex;
+         color: #6C73A5;
+         height: 100%;
+         h4{
+             margin: auto 6px;
+         }
+         mat-checkbox{
+            margin:auto 10px;
+         }
+    }
+}
+.contenedor{
+    height: 70px;
+    width: 97%;
+    margin: 13px auto;    
+    background-color: #2D325A;
+    border-radius: 20px;
+    display: flex;
+    transition: all 0.3s;
+    box-shadow: 14px 14px 9px -12px rgba(0, 0, 0, 0.2);
+    &:hover{
+        transform: translateY(-5px);
+        background-color: rgb(62, 70, 124);
+    }
+}
+.izquierda{
+    height: 100%;
+    .portador{
+        height: 100%;
+        display: flex;
+        .img-portador-container{
+            height: 60px;
+            width: 65px;
+            margin: auto 12px;
+            img{
+                height: 100%;
+                border-radius: 15px;                }
+        }
+        .name-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .name{
+                margin: 0 0;
+            }
+            .name-secundario{
+                color: #6C73A5;
+            }
+            .name-primario{
+                color: #b9bcd0;
+                font-weight: 500;   
+            }
+            transition: all .5s;
+            &:hover{
+                cursor: pointer;
+                transition: all .5s;
+                .name-secundario{
+                    color: rgb(141, 143, 165);
+                }
+                .name-primario{
+                    color: #c9c9ce;
+                    font-weight: 1000;   
+                }
+            }
+        }
+    }
+}
+.derecha_buttons{
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+    .margin_button{
+        margin: auto 12px;
+    }
+    .height-images{
+        height: 90%;
+        img{
+            height: 100%;
+        }
+    }
+}

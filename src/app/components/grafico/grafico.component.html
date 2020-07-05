@@ -1,0 +1,21 @@
+<div class="flex margin">
+    <div class="flex-item">
+      <div style="display: block;">
+      <canvas class="margin box-shadow" baseChart width="338px" height="218px" style="background-color: #2D325A; border-radius: 20px;"
+                  [datasets]="lineChartData"
+                  [labels]="lineChartLabels"
+                  [options]="lineChartOptions"
+                  [colors]="lineChartColors"
+                  [legend]="lineChartLegend"
+                  [chartType]="lineChartType"
+                  (chartHover)="chartHovered($event)"
+                  (chartClick)="chartClicked($event)"></canvas>
+      </div>
+    </div>
+    <div class="flex-item justify-content">
+      <button mat-button mat-stroked-button style="color: #3A57B1; border-color: #3A57B1 !important;" (click)="randomize()">RdMs</button>
+      <button mat-button mat-stroked-button style="color: #F65164; border-color: #F65164 !important;" (click)="pushOne()">PuSsh</button>
+      <button mat-button mat-stroked-button style="color: rgb(70, 221, 95); border-color: rgb(70, 221, 95) !important;" color="warn" (click)="changeColor()">RcLr</button>
+      <button mat-button mat-stroked-button style="color: #7033FF; border-color: #7033FF !important;" (click)="changeLabel()">ChN Lbl</button>
+    </div>
+  </div>

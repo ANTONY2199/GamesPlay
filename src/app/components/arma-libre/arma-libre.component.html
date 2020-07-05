@@ -1,0 +1,32 @@
+<div class="contenedor">
+    <div class="izquierda">
+        <div class="portador">
+            <div class="img-portador-container">
+                <img src="../../../assets/img/user/monkey_user.jpg" alt="">
+            </div>
+            <div class="name-container">
+                <h4 class="name name-secundario">Last Win</h4>
+                <h3 class="name name-primario">Hurley</h3>
+            </div>
+        </div>
+        <div class="join">
+            <div class="margin-center">
+                <button mat-button mat-stroked-button style="color: #3A57B1; border-color: #3A57B1 !important;" (click)="mueveReloj()">RdMs</button>
+            </div>
+        </div>
+    </div>
+    <div class="derecha">
+        <div class="img-arma-container">
+            <img src="../../../assets/img/cuchillos/pngocean.png" alt="">
+        </div>
+        <div class="tiempo-restante">
+            <div class="horas">
+                <h3 id="reloj">{{horaImprimible}}</h3>
+            </div>
+            <div class="portadores">
+                <mat-icon>person</mat-icon>
+                <p>123</p>
+            </div>
+        </div>
+    </div>
+</div>

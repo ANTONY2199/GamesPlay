@@ -1,0 +1,84 @@
+:host{
+    display: flex;
+}
+.izquierda{
+    background: #202442;
+    height: 100vh;
+    width: 27.5%;
+    display: flex;
+    flex-direction: column;
+    .armas-cont{
+        flex-grow: 1;
+        overflow-y: auto;
+        z-index: 1;
+    /*********************SCROLL***********************/
+        &::-webkit-scrollbar {
+            width: 4px;     /* Tamaño del scroll en vertical */
+            &:hover{
+                width: 6px;
+            }
+        }
+        &::-webkit-scrollbar-thumb {
+            background: radial-gradient(circle, rgba(6,255,127,0.5606617647058824) 14%, rgba(26,36,164,0.4206057422969187) 42%, rgba(106,22,163,0.4150035014005602) 85%, rgba(137,16,163,0.38139005602240894) 96%);
+            border-radius: 2px;
+            width: 4px;
+        }
+        
+        /* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+        &::-webkit-scrollbar-thumb:hover {
+            background: radial-gradient(circle, rgba(6,255,127,0.7231267507002801) 14%, rgba(26,36,164,0.6643032212885154) 42%, rgba(106,22,163,0.7595413165266106) 85%, rgba(137,16,163,0.6979166666666667) 96%);
+            box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+            width: 10px;
+        }
+        
+        /* Cambiamos el fondo cuando esté en active */
+        &::-webkit-scrollbar-thumb:active {
+            background: radial-gradient(circle, rgba(6,255,127,0.9948354341736695) 14%, rgba(26,36,164,1) 42%, rgba(106,22,163,1) 85%, rgba(137,16,163,1) 96%);
+            width: 10px;
+        }
+        &::-webkit-scrollbar-track {
+            background: transparent;
+            border-radius: 4px;
+        }
+        
+        /* Cambiamos el fondo cuando esté en active o hover */
+        &::-webkit-scrollbar-track:hover,
+        &::-webkit-scrollbar-track:active {
+        background: transparent;
+        }
+    }
+}
+.medio{
+    height: 100vh;
+    width: 50%;
+}
+.derecha{
+    height: 100vh;
+    width: 22.5%;
+}
+.haeder-heigth{
+    height: 40px;
+    color: #6C73A5;
+    margin: 10px auto;
+    width: 90%;
+}
+.iconos-derecha{
+    display: flex;
+    flex-direction: row-reverse;
+    button{
+        &:hover{
+        color: rgb(255, 255, 255);
+        }
+    }
+    
+}
+.estadistica-container{
+    margin: auto;
+    width: 90%;
+    .graphica{
+        img{
+            width: 100%;
+            border-radius: 7px;
+        }
+    }
+}

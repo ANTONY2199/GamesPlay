@@ -1,0 +1,95 @@
+.display-flex{
+    display: flex;
+}
+.lista-container{
+    margin: 20px 20px;
+   .lista-header{
+       width: 100%;
+       justify-content: space-between;
+       height: 52px;
+        .izquierda{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+            h4{
+                color: #6C73A5;
+                margin: 0 0;
+            }
+            h3{
+                color: #b9bcd0;
+                font-weight: 500;
+                margin: 0 0;  
+            }
+        }
+        .derecha{
+            display: flex;
+            color: #6C73A5;
+            height: 100%;
+            h4{
+                margin: auto 6px;
+            }
+            mat-checkbox{
+                margin: auto 0px;
+            }
+        }
+    } 
+    .lista-body{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        mat-card{
+            background-color: #2D325A !important;
+            border-radius: 20px !important;
+            width: 120px;
+            margin: 10px 6px;
+            .name-arma-container{
+                display: flex;
+                mat-icon{
+                    color: #ffcc40;
+                }
+                h4{
+                    color: #6C73A5; 
+                }
+            }
+            img{
+                width: 100%;
+                box-shadow: 0px 12px 5px -5px rgba(0, 0, 0, 0.2);
+            }
+            .name-container{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .name{
+                    margin: 0 0;
+                }
+                .name-secundario{
+                    color: #6C73A5;
+                }
+                .name-primario{
+                    color: #b9bcd0;
+                    font-weight: 500;   
+                }
+                transition: all .5s;
+                &:hover{
+                    cursor: pointer;
+                    transition: all .5s;
+                    .name-secundario{
+                        color: rgb(141, 143, 165);
+                    }
+                    .name-primario{
+                        color: #c9c9ce;
+                        font-weight: 1000;   
+                    }
+                }
+            }
+            transition: all .5s;
+            &:hover{
+                box-shadow: 0 0 10px #11102a;
+                background: #3e467c;
+                transform: translateY(-5px);
+                transition: all .5s;
+            }
+        }
+    }
+}

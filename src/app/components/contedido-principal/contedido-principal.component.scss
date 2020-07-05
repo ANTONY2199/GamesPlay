@@ -1,0 +1,49 @@
+.width-100{
+    width: 100%;flex-grow: 1;
+    overflow-y: auto;
+    /*********************SCROLL***********************/
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+.contenedor{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.cont-scroll{
+    flex-grow: 1;
+    overflow-y: auto;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 550px;
+}
+
+.haeder-heigth{
+    height: 40px;
+    color: #6C73A5;
+    margin: 10px auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.iconos-izquierda{
+    display: flex;
+    width: 50%;
+    button{
+        &:hover{
+        color: rgb(255, 255, 255);
+        }
+    } 
+}
+.iconos-derecha{
+    width: 50%;
+    display: flex;
+    h3{
+        color: white;
+        margin: auto 0;
+        span{
+            color: #4468d5;
+        }
+    }
+}

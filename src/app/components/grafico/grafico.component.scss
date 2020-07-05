@@ -1,0 +1,17 @@
+.margin{
+    margin: 0 0 10px;
+}
+.justify-content{
+    display: flex;
+    justify-content: space-between;
+}
+.box-shadow{
+    width: 100%;
+    transition: all .5s;
+    height: 220px;
+    &:hover{
+        box-shadow: 0 0 10px #11102a;
+        transition: all .5s;
+        width: 120%;
+    }
+}
